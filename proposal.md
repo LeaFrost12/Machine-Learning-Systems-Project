@@ -91,7 +91,6 @@ Hardware/software
 Trails and variability
 - Train each configuration with 5 random seeds
 - Evaluate each trained model on the same test workload
-- 
 - Report 95% confidence intervals of metrics where appropriate
 
 Planned plots & tables
@@ -109,7 +108,14 @@ Planned plots & tables
 
 
 ## Timeline and Milestones
-
+| Period      | Milestone   | Evidence of Completion | Owner(s) |
+| ----------- | ----------- | ---------------------- | -------- |
+| Week 1      | Title       |                        | Team     |
+| Week 2      | Text        |                        | Team     |
+| Week 3      | Title       |                        | Team     |
+| Week 4      | Text        |                        | Team     |
+| Week 5      | Title       |                        | Team     |
+| Week 6      | Text        |                        | Team     |
 
 ## Risks and Mitigations
 
