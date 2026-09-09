@@ -1,7 +1,7 @@
 # Project Title
 
 ## Team and Responsibilities
-Lea Frost
+Lea Frost  
 Strengths:
 - Experience in both software engineering and machine learning research
 - Knowledge of machine learning algorithms and the math behind them
@@ -62,6 +62,47 @@ https://doi.org/10.1007/s11042-026-21211-y
 
 
 ## Evaluation Plan
+
+Research question / experiment
+- RQ1: Vary audio window size (1s, 2s, 3s, 5s) while other variables remain constant and evaluate on the same data splits and compare accuracy and time-to-detection.
+- RQ2: Vary prediction interval (0.2s, 0.5s, 1.0s) while other variables remain constant and evaluate on the same data splits, comparing time-to-detection and computational utilization.
+- RQ3: Train a simple custom CNN, fine-tune a few pre-trained bird identification models, and compare prediction performance, latency, and resource usage. 
+
+Datasets / workloads
+- Dataset: BirdSet (Rauch et al., 2025) - Bird-sound recordings on multiple species with background noise. Will select a subset of 20 species for simplification.
+- Workload: Labeled recordings will be played as real-time continuous audio stream to simulate microphone recording.
+
+Baseline / Ablations
+- Baseline: 3s window, 1.0s prediction interval, medium-sized model
+- Ablations: Ablate one variable at a time to find the most optimal choices. Will then select the best combinations of all 3 variables for an overall system comparison.
+
+Controlled / varied factors
+- Controlled: Audio window size, prediction frequency/interval, model configuration
+- Varied: dataset, data split, preprocessing, hardware, software environment
+
+System/quality metrics
+- Quality: Accuracy, precision, recall, F1 (%)
+- System: time-to-detection (s), inference latency (ms), CPU utilization (%), memory usage (MB)
+
+Hardware/software
+- All experiments will be run on my laptop in a virtual environment.
+- Python 3.x, Pytorch, torchaudio, and scikit-learn.
+
+Trails and variability
+- Train each configuration with 5 random seeds
+- Evaluate each trained model on the same test workload
+- 
+- Report 95% confidence intervals of metrics where appropriate
+
+Planned plots & tables
+- F1 vs window size
+- time-to-detection vs window size
+- time-to-detection vs prediction interval
+- F1 vs prediction interval
+- Inference latency vs model configuration
+- Memory usage vs model configuration
+- Pareto chart of F1 vs time-to-detection, resource usage showed as bar chart
+- Summary table of all tested configurations
 
 
 ## Expected Deliverables
