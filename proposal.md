@@ -52,13 +52,14 @@ https://doi.org/10.1101/2023.05.22.541336
 - **Artifact**: I will reference the paper's audio streaming design (continuous audio with overlapping windows) as well as its approach to adjusting audio and model configuration.  
 - **Difference**: This paper only used one static configuration for its results. I will use many different window sizes, prediction intervals, and model choices for my results
 
-3. A real-time bird sound recognition app via deep learning techniques
+3. A real-time bird sound recognition app via deep learning techniques  
 https://doi.org/10.1007/s11042-026-21211-y  
 - **Overview**: Develops a real-time identification system for mobile deployment and compares several different model choices and their effects on prediction performance, inference time, and memory usage.
 - **Artifact**: I will consult this paper's comparison of different models' effects on accuracy and efficiency, which demonstrates the importance of model choice in streaming inference systems.
 - **Difference**: This paper only studied model configuration whereas I will also be studying audio configuration, specifically window size and prediction frequency.
 
 ## Proposed System or Approach
+![Bird sound identification pipeline](images/pipeline)
 
 
 ## Evaluation Plan
