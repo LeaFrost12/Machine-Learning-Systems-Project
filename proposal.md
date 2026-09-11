@@ -1,4 +1,4 @@
-# Project Title
+# Balancing Accuracy and Responsiveness in Real-Time Bird Sound Identification
 
 ## Team and Responsibilities
 Lea Frost  
