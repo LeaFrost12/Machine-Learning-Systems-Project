@@ -104,19 +104,35 @@ Planned plots & tables
 - Pareto chart of F1 vs time-to-detection, resource usage showed as bar chart
 - Summary table of all tested configurations
 
+Success criteria
+
 
 ## Expected Deliverables
-
+- Source code: PyTorch implementation of the real-time bird-sound inference pipeline and model configurations.
+- Configuration files: Reproducible configurations specifying model, audio window size, prediction interval, preprocessing, and confidence threshold.
+- Experiment scripts: Automated scripts for running the window-size, prediction-interval, and model-configuration experiments and collecting metrics.
+- Dataset preparation pipeline: Scripts for selecting/preprocessing the BirdSet subset and constructing reproducible streaming evaluation workloads.
+- Results: Raw per-inference and per-detection measurements plus processed summary results for F1, time-to-detection, inference latency, CPU utilization, and memory usage.
+- Figures and tables: Accuracy–responsiveness Pareto plots, factor comparison plots, latency distributions, resource-usage results, and configuration comparison tables.
+- Demo: Real-time microphone-based bird identification demonstrating the final selected configuration.
+- Documentation: README with setup, dataset preparation, training, experiment, and reproduction instructions.
+- Final report: Experimental methodology, results, analysis, limitations, and conclusions.
 
 ## Timeline and Milestones
 | Period      | Milestone   | Evidence of Completion | Owner(s) |
 | ----------- | ----------- | ---------------------- | -------- |
-| Week 1      | Title       |                        | Team     |
-| Week 2      | Text        |                        | Team     |
-| Week 3      | Title       |                        | Team     |
-| Week 4      | Text        |                        | Team     |
-| Week 5      | Title       |                        | Team     |
-| Week 6      | Text        |                        | Team     |
+| Week 1      | Literature Review       |  Solid understanding of existing implementations   | Lea     |
+| Week 2      | Data setup        |  BirdSet data selected and downloaded, split, and preprocessed and is ready for the model   | Lea     |
+| Week 3      | Baseline system       | A basic model with the baseline configuration trains on the data and produces predictions | Lea     |
+| Week 4      | Streaming parameters       | Continuous audio is fed to the system, able to adjust window size and prediction interval | Lea     |
+| Week 5      | Metric instrumentation        | Metrics like F1, time-to-detection, inference latency, CPU and memory usage are automatically recorded | Lea     |
+| Week 6      | 3 Model configurations        | 3 different models train, predict, and produce metrics using the same pipeline | Lea     |
+| Week 7      | Basic experiments       | One experiment per variable produces results and plots  | Lea     |
+| Week 8      | Full experiments        | All experiments with the planned configurations are run, results are saved  | Lea     |
+| Week 9     | Analysis        |  Final summary of results with plots and comparison tables | Lea     |
+| Week 10     | Report + presentation prep        |  Final report, figures, documented repo, and presentation complete   | Lea     |
+
+If time permits or after the course has ended, will try a basic deployment in a simple web app. 
 
 ## Risks and Mitigations
 
